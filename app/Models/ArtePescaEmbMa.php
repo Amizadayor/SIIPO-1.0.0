@@ -18,6 +18,8 @@ class ArtePescaEmbMa extends Model
         'DGEMMAid',
     ];
 
+    protected $timestamps = true;
+
     public function ArtePesca()
     {
         return $this->belongsTo(ArtePesca::class, 'TPArtPescaid', 'id');
