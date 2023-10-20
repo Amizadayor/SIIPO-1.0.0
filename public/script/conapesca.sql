@@ -67,7 +67,7 @@ CREATE TABLE UnidadEconomicaPA (
     FOREIGN KEY (Ofcid) REFERENCES Oficinas(id)
 );
 
-CREATE TABLE DatosGeneralesPA ( --Me quedpe hasta aqui
+CREATE TABLE DatosGeneralesPA (
     id INT PRIMARY KEY NOT NULL,
     TipoPersona BOOLEAN NOT NULL,
     CURP VARCHAR(18) NOT NULL,
@@ -242,7 +242,7 @@ CREATE TABLE EquipoRadioComunicacion (
     id INT PRIMARY KEY NOT NULL,
     NombreEquipoRadioComunicacion VARCHAR(50) NOT NULL
 );
-CREATE TABLE EquipoNavegacion ( --Hasta aquí me quede con las migraciones, modelos y controladores
+CREATE TABLE EquipoNavegacion (
     id INT PRIMARY KEY NOT NULL,
     NombreEquipoNavegacion VARCHAR(50) NOT NULL
 );
