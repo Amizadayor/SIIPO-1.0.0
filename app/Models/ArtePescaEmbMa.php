@@ -18,7 +18,7 @@ class ArtePescaEmbMa extends Model
         'DGEMMAid',
     ];
 
-    protected $timestamps = true;
+    public $timestamps = true;
 
     public function ArtePesca()
     {
