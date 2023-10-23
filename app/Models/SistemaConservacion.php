@@ -14,5 +14,5 @@ class SistemaConservacion extends Model
     protected $fillable = [
         'NombreSistemaConservacion',
     ];
-    protected $timestamps = true;
+    public $timestamps = true;
 }
