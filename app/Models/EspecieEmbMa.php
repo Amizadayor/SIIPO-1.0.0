@@ -12,10 +12,14 @@ class EspecieEmbMa extends Model
     use HasFactory;
     protected $table = 'especies_emb_ma';
 
+    protected $primaryKey = 'id';
+
     protected $fillable = [
         'TPEspecieid',
         'DGEMMAid',
     ];
+
+    public $timestamps = true;
 
     public function Especie()
     {
