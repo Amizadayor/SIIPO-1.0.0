@@ -42,7 +42,7 @@ class CaractrsGenEmbMa extends Model
     }
 
 
-    public function DatosGeneralesEmbMA()
+    public function DatosGeneralesEmbMa()
     {
         return $this->belongsTo(DatosGeneralesEmbMa::class, 'DGEMMAid', 'id');
     }
