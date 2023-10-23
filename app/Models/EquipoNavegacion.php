@@ -14,5 +14,5 @@ class EquipoNavegacion extends Model
         'NombreEquipoComunicacion',
     ];
 
-    protected $timestamps = true;
+    public $timestamps = true;
 }
