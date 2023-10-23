@@ -15,5 +15,5 @@ class EquipoComunicacion extends Model
         'NombreEquipoComunicacion',
     ];
 
-    protected $timestamps = true;
+    public $timestamps = true;
 }
