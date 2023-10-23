@@ -27,6 +27,8 @@ class CaractrsGenEmbMa extends Model
         'DGEMMAid',
     ];
 
+    public $timestamps = true;
+
     public function MaterialCasco()
     {
         return $this->belongsTo(MaterialCasco::class, 'MtrlCascoid', 'id');
@@ -35,13 +37,10 @@ class CaractrsGenEmbMa extends Model
     {
         return $this->belongsTo(TipoActividad::class, 'TPActid', 'id');
     }
-
     public function TipoCubierta()
     {
         return $this->belongsTo(TipoCubierta::class, 'TPCubid', 'id');
     }
-
-
     public function DatosGeneralesEmbMa()
     {
         return $this->belongsTo(DatosGeneralesEmbMa::class, 'DGEMMAid', 'id');
