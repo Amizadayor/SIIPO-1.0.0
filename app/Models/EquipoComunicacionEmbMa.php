@@ -12,10 +12,12 @@ class EquipoComunicacionEmbMa extends Model
     use HasFactory;
     protected $table = 'equipos_comunicacion_emb_ma';
 
+    protected $primaryKey = 'id';
     protected $fillable = [
         'EqpoComunicacionid',
         'DGEMMAid',
     ];
+    public $timestamps = true;
 
     public function EquipoComunicacion()
     {
