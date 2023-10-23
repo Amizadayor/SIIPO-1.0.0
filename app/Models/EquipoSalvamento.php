@@ -14,5 +14,5 @@ class EquipoSalvamento extends Model
     protected $fillable = [
         'NombreEquipoSalvamento',
     ];
-    protected $timestamps = true;
+    public $timestamps = true;
 }
