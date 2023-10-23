@@ -12,6 +12,8 @@ class EquipoDeteccionEmbMa extends Model
     use HasFactory;
     protected $table = 'equipos_deteccion_emb_ma';
 
+    protected $primaryKey = 'id';
+
     protected $fillable = [
         'EqpoDeteccionid',
         'DGEMMAid',
