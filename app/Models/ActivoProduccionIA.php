@@ -27,11 +27,11 @@ class ActivoProduccionIA extends Model
     public $timestamps = true;
     public function DatosGeneralesIA()
     {
-        return $this->belongsTo(DatosGeneralesIA::class, 'DGIAid');
+        return $this->belongsTo(DatosGeneralesIA::class, 'DGIAid', 'id');
     }
 
     public function TipoActivo()
     {
-        return $this->belongsTo(TipoActivo::class, 'TPActivoid');
+        return $this->belongsTo(TipoActivo::class, 'TPActivoid', 'id');
     }
 }
