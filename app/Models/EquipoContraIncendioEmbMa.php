@@ -12,10 +12,14 @@ class EquipoContraIncendioEmbMa extends Model
     use HasFactory;
     protected $table = 'equipos_contraincendio_emb_ma';
 
+    protected $primaryKey = 'id';
+
     protected $fillable = [
         'EqpoContraIncendioid',
         'DGEMMAid',
     ];
+
+    public $timestamps = true;
 
     public function EquipoContraIncendio()
     {
