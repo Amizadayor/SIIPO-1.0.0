@@ -11,7 +11,6 @@ class DatosGeneralesEmbMa extends Model
     use HasFactory;
     protected $table = 'datosgenerales_emb_ma';
     protected $primaryKey = 'id';
-
     protected $fillable = [
         'NombreEmbMayor',
         'RNPA',
@@ -23,9 +22,7 @@ class DatosGeneralesEmbMa extends Model
         'DocCertificadoSegEmbs',
         'UEEMMAid',
     ];
-
-    protected $timestamps = true;
-
+    public $timestamps = true;
     public function UnidadEconomicaEmbMa()
     {
         return $this->belongsTo(UnidadEconomicaEmbMa::class, 'UEEMMAid', 'id');
