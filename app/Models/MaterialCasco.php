@@ -13,5 +13,5 @@ class MaterialCasco extends Model
     protected $fillable = [
         'NombreMaterialCasco',
     ];
-    protected $timestamps = true;
+    public $timestamps = true;
 }
