@@ -26,7 +26,7 @@ class FuenteCapturaAguaIA extends Model
     public $timestamps = true;
     public function DatosGeneralesIA()
     {
-        return $this->belongsTo(DatosGeneralesIA::class, 'DGIAid');
+        return $this->belongsTo(DatosGeneralesIA::class, 'DGIAid', 'id');
     }
 
 }
