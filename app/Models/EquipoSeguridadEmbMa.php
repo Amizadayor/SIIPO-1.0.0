@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\EquipoSeguridad;
-use App\Models\DatosGeneralesEmbMA;
+use App\Models\DatosGeneralesEmbMa;
 
 class EquipoSeguridadEmbMa extends Model
 {
@@ -24,8 +24,8 @@ class EquipoSeguridadEmbMa extends Model
         return $this->belongsTo(EquipoSeguridad::class, 'EqpoSeguridadid', 'id');
     }
 
-    public function DatosGeneralesEmbMA()
+    public function DatosGeneralesEmbMa()
     {
-        return $this->belongsTo(DatosGeneralesEmbMA::class, 'DGEMMAid', 'id');
+        return $this->belongsTo(DatosGeneralesEmbMa::class, 'DGEMMAid', 'id');
     }
 }
