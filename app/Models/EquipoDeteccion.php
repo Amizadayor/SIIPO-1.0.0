@@ -16,5 +16,5 @@ class EquipoDeteccion extends Model
         'NombreEquipoDeteccion',
     ];
 
-    protected $timestamps = true;
+    public $timestamps = true;
 }
