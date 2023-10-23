@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Especie;
-use App\Models\DatosGeneralesEmbMA;
+use App\Models\DatosGeneralesEmbMa;
 
 class EspecieEmbMa extends Model
 {
@@ -26,8 +26,8 @@ class EspecieEmbMa extends Model
         return $this->belongsTo(Especie::class, 'TPEspecieid', 'id');
     }
 
-    public function DatosGeneralesEmbMA()
+    public function DatosGeneralesEmbMa()
     {
-        return $this->belongsTo(DatosGeneralesEmbMA::class, 'DGEMMAid', 'id');
+        return $this->belongsTo(DatosGeneralesEmbMa::class, 'DGEMMAid', 'id');
     }
 }
