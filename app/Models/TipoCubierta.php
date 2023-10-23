@@ -13,5 +13,5 @@ class TipoCubierta extends Model
     protected $fillable = [
         'NombreTipoCubierta',
     ];
-    protected $timestamps = true;
+    public $timestamps = true;
 }
