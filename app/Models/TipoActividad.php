@@ -13,5 +13,5 @@ class TipoActividad extends Model
     protected $fillable = [
         'NombreTipoActividad',
     ];
-    protected $timestamps = true;
+    public $timestamps = true;
 }
