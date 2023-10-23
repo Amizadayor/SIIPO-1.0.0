@@ -18,6 +18,8 @@ class UnidadEconomicaEmbMa extends Model
         'UEDuenoid',
     ];
 
+    public $timestamps = true;
+
     public function UnidadEconomicaPA()
     {
         return $this->belongsTo(UnidadEconomicaPA::class, 'UEDuenoid', 'id');
