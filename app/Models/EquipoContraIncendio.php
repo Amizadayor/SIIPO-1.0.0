@@ -13,5 +13,5 @@ class EquipoContraIncendio extends Model
     protected $fillable = [
         'NombreEquipoContraIncendio',
     ];
-    protected $timestamps = true;
+    public $timestamps = true;
 }
