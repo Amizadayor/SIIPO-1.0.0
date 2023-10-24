@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('privilegios', function (Blueprint $table) {
             $table->id();
-            $table->string('NombrePwermiso', 30)->nullable();
+            $table->string('NombrePermiso', 30)->nullable();
             $table->timestamps();
         });
     }
