@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('permisos_pesca', function (Blueprint $table) {
             $table->id();
-            $table->string('Numero', 50)->nullable();
+            $table->string('NombrePemiso', 50)->nullable();
             $table->timestamps();
         });
     }
