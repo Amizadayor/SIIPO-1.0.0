@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('detalles_pa', function (Blueprint $table) {
             $table->id();
             $table->date('IniOperaciones');
-            $table->boolean('ActvPesquera');
+            $table->boolean('ActvPesqueraAcuacultura');
+            $table->boolean('ActvPesqueraCaptura');
             $table->boolean('ActivoEmbMayor');
             $table->boolean('ActivoEmbMenor');
             $table->binary('DocActaNacimiento');
